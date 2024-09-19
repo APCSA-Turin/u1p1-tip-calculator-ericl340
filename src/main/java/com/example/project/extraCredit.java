@@ -16,6 +16,13 @@ public class extraCredit {
         double costPer = cost / people;
         double tipCostPer = tipCost / people;
         double totalCostPer = totalCost / people;
+        Scanner scan = new Scanner(System.in);
+        String temp;
+        while (true) {
+            System.out.println("Enter an item name or type '-1' to finish:");
+            temp = scan.nextLine()
+            break
+        }
                        
         result.append("-------------------------------\n");
         result.append("Total bill before tip: $" + formatNum(cost) + "\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
