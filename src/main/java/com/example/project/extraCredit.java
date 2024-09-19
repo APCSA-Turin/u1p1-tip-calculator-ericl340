@@ -1,6 +1,6 @@
 package com.example.project;
-
-public class TipCalculator {
+import java.util.Scanner;
+public class extraCredit {
     //WRITE YOUR PROGRAM IN calculateTip
     public static String formatNum(double num) {
         num = Math.round(num * 100) / 100.0;
