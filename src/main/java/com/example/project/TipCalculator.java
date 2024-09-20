@@ -16,7 +16,7 @@ public class TipCalculator {
         double costPer = cost / people;
         double tipCostPer = tipCost / people;
         double totalCostPer = totalCost / people;
-                       
+        
         result.append("-------------------------------\n");
         result.append("Total bill before tip: $" + formatNum(cost) + "\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
         result.append("Total percentage: " + percent + "%\n");
@@ -26,8 +26,6 @@ public class TipCalculator {
         result.append("Tip per person: $" + formatNum(tipCostPer) + "\n");
         result.append("Total cost per person: $" + formatNum(totalCostPer) + "\n");
         result.append("-------------------------------\n");
-
-
         return result.toString();
     }
      //TEST YOUR PROGRAM IN main
@@ -39,4 +37,3 @@ public class TipCalculator {
         System.out.println(calculateTip(people,percent,cost));
     }
 }
-        
