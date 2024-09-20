@@ -17,12 +17,6 @@ public class extraCredit {
         double tipCostPer = tipCost / people;
         double totalCostPer = totalCost / people;
         Scanner scan = new Scanner(System.in);
-        String temp;
-        while (true) {
-            System.out.println("Enter an item name or type '-1' to finish:");
-            temp = scan.nextLine()
-            break
-        }
                        
         result.append("-------------------------------\n");
         result.append("Total bill before tip: $" + formatNum(cost) + "\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
@@ -33,7 +27,17 @@ public class extraCredit {
         result.append("Tip per person: $" + formatNum(tipCostPer) + "\n");
         result.append("Total cost per person: $" + formatNum(totalCostPer) + "\n");
         result.append("-------------------------------\n");
-
+        result.append("Items Ordered:");
+        String temp;
+        while (true) {
+            System.out.println("Enter an item name or type '-1' to finish:");
+            temp = scan.nextLine();
+            if (!temp.equals("-1")) {
+                result.append(temp);
+            }else{
+                break;
+            }
+        }
 
         return result.toString();
     }
