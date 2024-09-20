@@ -27,13 +27,13 @@ public class extraCredit {
         result.append("Tip per person: $" + formatNum(tipCostPer) + "\n");
         result.append("Total cost per person: $" + formatNum(totalCostPer) + "\n");
         result.append("-------------------------------\n");
-        result.append("Items Ordered:");
+        result.append("Items Ordered:\n");
         String temp;
         while (true) {
             System.out.println("Enter an item name or type '-1' to finish:");
             temp = scan.nextLine();
             if (!temp.equals("-1")) {
-                result.append(temp);
+                result.append(temp + "\n");
             }else{
                 break;
             }
